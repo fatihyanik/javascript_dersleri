@@ -42,3 +42,43 @@ console.log(arr7.splice(2, 3, "mango", "kiwi")); // [ 'muz', 'portakal', 'karpuz
 // yukaridaki örnekte 2. indexten sonraki 3 elamani sildi ve ekrana silinen elamanlarla birlikte array yazdirdi.
 console.log(arr7); // [ 'elma', 'armut', 'mango', 'kiwi' ]
 
+// slice():
+const arr8 = ['elma', 'armut', 'muz', "portakal", "karpuz"];
+const sonuc = arr8.slice(1, 4);
+console.log(sonuc); // [ 'armut', 'muz', 'portakal' ]
+console.log(arr8); // [ 'elma', 'armut', 'muz', 'portakal', 'karpuz' ]
+
+// from(): 
+const obj = { 0: "elma", 1: "armut", 2: "muz", 3: "kiraz", length: 3 }
+const str = "Ahmet"
+console.log(Array.from(str));
+const arr9 = Array.from(obj)
+console.log(arr9);
+
+const entries = [['a', 1], ['b', 2], ['c', 3]];
+const obj2 = Object.fromEntries(entries);
+console.log(obj2);
+
+const mySet = new Set([1,1,2,3, 2, 3, 4, 5]);
+console.log(mySet); // Set(5) { 1, 2, 3, 4, 5 }
+
+const setArray = Array.from(mySet);
+console.log(setArray); // [ 1, 2, 3, 4, 5 ]
+
+const myMap = new Map([[1, 'bir'], [2, 'iki'], [4, 'üç'], [3, 'dort'], [3, 'üç'], ["dort", 5]]);
+console.log(myMap); // Map(5) { 1 => 'bir', 2 => 'iki', 4 => 'üç', 3 => 'üç', 'dort' => 5 }
+
+// Bir dizeden dizi oluşturma
+const str2 = "Merhaba";
+const strArray = Array.from(str2);
+console.log(strArray); // ["M", "e", "r", "h", "a", "b", "a"]
+
+// Bir Set'ten dizi oluşturma
+const mySet1 = new Set([1, 2, 3, 4, 5]);
+const setArray2 = Array.from(mySet1);
+console.log(setArray2); // [1, 2, 3, 4, 5]
+
+// Bir Map'ten sadece değerlerle dizi oluşturma
+const myMap3 = new Map([[1, 'bir'], [2, 'iki'], [3, 'üç'], ["dort", 4]]);
+const mapValuesArray = Array.from(myMap3.values());
+console.log(mapValuesArray); // [ 'bir', 'iki', 'üç', 4 ]
