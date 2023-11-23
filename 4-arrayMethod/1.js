@@ -82,3 +82,56 @@ console.log(setArray2); // [1, 2, 3, 4, 5]
 const myMap3 = new Map([[1, 'bir'], [2, 'iki'], [3, 'üç'], ["dort", 4]]);
 const mapValuesArray = Array.from(myMap3.values());
 console.log(mapValuesArray); // [ 'bir', 'iki', 'üç', 4 ]
+
+// join()
+const arr10 = ["elma", "armut", "muz" ];
+const str10 = arr10.join(" ");
+console.log(str10); // elma, armut, muz
+
+const arr11 = ["elma", "armut", "muz" ];
+const str11 = arr11.join("/");
+console.log(str11); // elma/ armut/ muz
+
+// toString()
+const arr12 = ["elma", "armut", "muz", 1, 2];
+const str12 = arr12.toString();
+console.log(str12);
+
+// pop()
+const arr13 = ["elma", "armut", "muz", 1, 2];
+const str13 = arr13.pop();
+console.log(str13); // 2
+console.log(arr13); // [ 'elma', 'armut', 'muz', 1 ]
+// not: arrayi degistiren methodlara (mutator) method deniliyor. mutate önemlidir.
+
+// shift()
+const arr14 = ["elma", "armut", "muz", 1, 2];
+const str14 = arr14.shift();
+console.log(str14); // elma
+console.log(arr14); // [ 'armut', 'muz', 1, 2 ]
+
+// Mutator array methods
+// sort()
+// unshift()
+// shift()
+// splice()
+// push()
+// reverse()
+// pop()
+// fill()
+// forEach()
+
+// Non-mutator array methods
+// slice()
+// join()
+// includes()
+// filter()
+// concat()
+// every()
+// find()
+// findIndex()
+// map()
+// reduce()
+// some()
+// flat()
+// flatMap()
