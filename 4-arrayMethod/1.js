@@ -59,7 +59,7 @@ const entries = [['a', 1], ['b', 2], ['c', 3]];
 const obj2 = Object.fromEntries(entries);
 console.log(obj2);
 
-const mySet = new Set([1,1,2,3, 2, 3, 4, 5]);
+const mySet = new Set([1, 1, 2, 3, 2, 3, 4, 5]);
 console.log(mySet); // Set(5) { 1, 2, 3, 4, 5 }
 
 const setArray = Array.from(mySet);
@@ -84,11 +84,11 @@ const mapValuesArray = Array.from(myMap3.values());
 console.log(mapValuesArray); // [ 'bir', 'iki', 'üç', 4 ]
 
 // join()
-const arr10 = ["elma", "armut", "muz" ];
+const arr10 = ["elma", "armut", "muz"];
 const str10 = arr10.join(" ");
 console.log(str10); // elma, armut, muz
 
-const arr11 = ["elma", "armut", "muz" ];
+const arr11 = ["elma", "armut", "muz"];
 const str11 = arr11.join("/");
 console.log(str11); // elma/ armut/ muz
 
@@ -109,6 +109,42 @@ const arr14 = ["elma", "armut", "muz", 1, 2];
 const str14 = arr14.shift();
 console.log(str14); // elma
 console.log(arr14); // [ 'armut', 'muz', 1, 2 ]
+
+// push()
+const meyveler = ["elma", "armut"];
+meyveler.push("mandalina", "portakal");
+console.log(meyveler); // [ 'elma', 'armut', 'mandalina', 'portakal' ]
+
+//unshift()
+const meyveler1 = ["elma", "armut"];
+meyveler1.unshift("mandalina", "portakal");
+console.log(meyveler1); // [ 'mandalina', 'portakal', 'elma', 'armut' ]
+
+//flat()
+const arr16 = [0, 1, 2, [3, 4]];
+console.log(arr16.flat());
+// expected output: Array [0, 1, 2, 3, 4]
+const arr15 = [0, 1, [2, [3, [4, 5]]]];
+console.log(arr15.flat());
+// expected output: Array [0, 1, 2, Array [3, Array [4, 5]]]
+console.log(arr15.flat(2));
+// expected output: Array [0, 1, 2, 3, Array [4, 5]]
+console.log(arr15.flat(Infinity));
+// expected output: Array [0, 1, 2, 3, 4, 5]
+
+// lastIndexOf()
+const arr17 = ["elma", "armut", "muz", 1, 2, 2, 2, 2, 2, , 2, , 2, 2, , 2, 2, , 2, 5, 6, 7];
+const lastIndex = arr17.lastIndexOf(7);
+console.log(lastIndex);
+
+const numbers20 = [2, 5, 9, 2, 2, 3, 4, 1, 1, 1, 3, 3, 3, 3, 2, 2, 22,2,2,2,2,2,2,2,2];
+console.log("1", numbers20.lastIndexOf(2)); // 3
+console.log(numbers20.lastIndexOf(7)); // -1
+console.log(numbers20.lastIndexOf(3, 9)); // 3
+console.log("cevap",numbers20.lastIndexOf(2, 5)); // 0
+console.log(numbers20.lastIndexOf(1, 9)); // 0
+console.log("bahadir",numbers20.lastIndexOf(22, -1)); // 3
+console.log(numbers20.lastIndexOf(22, -10));
 
 // Mutator array methods
 // sort()
