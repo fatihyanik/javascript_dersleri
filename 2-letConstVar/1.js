@@ -1,6 +1,6 @@
 //degisken olusturma(declaration)
 //degisken tanimlama(initialization)
-console.log(sayi);
+console.log(sayi); // burasi var'da cagrilabiliyor bu hoisted degildir
 var sayi = 3; // (variable declaration)
 console.log(sayi); //undefined
 

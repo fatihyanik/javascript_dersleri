@@ -3,6 +3,7 @@ console.log(numbers.length);
 
 // JS'de "map" fonksiyonu, bir dizi(array) veya liste uzerinde döngü yapmamiza ve her ögeyi
 // isleyip yeni bir dizi(array) olusturmamiza yardimci olan cok kullanisli bir fonksiyondur.
+// kisacasi map methodu mutate degildir.
 
 // not: bu fonksiyon, mevcut diziyi(arrayi) degistirmez.sadece yeni bir diziyi döndürür.
 // not: döndürülen dizi, orjinal dizinin uzunlugu ile ayni olmak zorundadir. Eger isleme tabi olmayan eleman varsa, "undefined" degeri ile doldurulur.
@@ -27,3 +28,24 @@ const sonuc = dizi.map((eleman, index, dizi) => {
 })
 
 console.log(sonuc);
+console.log("numbers", numbers);
+
+const arr6 = [3, 5, 7];
+arr6.forEach((num)=>{
+    console.log(num);
+})
+
+const arr7 = [3, 5, 7];
+let total=1;
+arr6.forEach((num)=>{
+    total=total*num
+    console.log(total); // 3 15 105
+})
+console.log(total) // 105
+console.log(arr7);
+// Foreach methodu bize bir dizi(array)  dönmez. verilen arrayin her bir elemanini ayri ayri döndürür ve bunlarla ilgili islem yapmamizi saglar.
+
+let array = [1, 2, 3, 4];
+array.forEach((ele, index) => array[index] = ele * 2);
+
+console.log(array);
