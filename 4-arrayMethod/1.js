@@ -137,14 +137,44 @@ const arr17 = ["elma", "armut", "muz", 1, 2, 2, 2, 2, 2, , 2, , 2, 2, , 2, 2, , 
 const lastIndex = arr17.lastIndexOf(7);
 console.log(lastIndex);
 
-const numbers20 = [2, 5, 9, 2, 2, 3, 4, 1, 1, 1, 3, 3, 3, 3, 2, 2, 22,2,2,2,2,2,2,2,2];
+const numbers20 = [2, 5, 9, 2, 2, 3, 4, 1, 1, 1, 3, 3, 3, 3, 2, 2, 22, 2, 2, 2, 2, 2, 2, 2, 2];
 console.log("1", numbers20.lastIndexOf(2)); // 3
 console.log(numbers20.lastIndexOf(7)); // -1
 console.log(numbers20.lastIndexOf(3, 9)); // 3
-console.log("cevap",numbers20.lastIndexOf(2, 5)); // 0
+console.log("cevap", numbers20.lastIndexOf(2, 5)); // 0
 console.log(numbers20.lastIndexOf(1, 9)); // 0
-console.log("bahadir",numbers20.lastIndexOf(22, -1)); // 3
+console.log("bahadir", numbers20.lastIndexOf(22, -1)); // 3
 console.log(numbers20.lastIndexOf(22, -10));
+
+// find()
+const array = [1, 2, 8, 3, 4, 5, 9, 8, 6, 7, 8, 9, 0];
+const foundNumber = array.find((num) => num > 5);
+console.log(foundNumber); // 8
+
+// some()
+const array2 = [1, 7, 3, 9, 5, 2];
+const hasEvenNumber = array2.some((num) => num % 2 === 0)
+console.log(hasEvenNumber); // true
+
+// every()
+const array3 = [4, 2, 6, 8, 0, 1];
+const allEvenNumbers = array3.every((num) => num % 2 === 0)
+console.log(allEvenNumbers); // false
+
+//indexOf()
+const array4 = [4, 2, 6, 8, 0, 1];
+const arrayIndex = array4.indexOf(8)
+console.log(arrayIndex); // 3
+
+// concat()
+const array5 = [4, 2, 6, 8, 0, 1];
+const array6 = [1, 7, 3, 9, 5, 2];
+const array7 = array5.concat(array6);
+console.log(array7);
+
+
+
+
 
 // Mutator array methods
 // sort()

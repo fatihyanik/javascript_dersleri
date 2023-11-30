@@ -45,7 +45,8 @@ console.log(total) // 105
 console.log(arr7);
 // Foreach methodu bize bir dizi(array)  dönmez. verilen arrayin her bir elemanini ayri ayri döndürür ve bunlarla ilgili islem yapmamizi saglar.
 
-let array = [1, 2, 3, 4];
+const array = [1, 2, 3, 4];
 array.forEach((ele, index) => array[index] = ele * 2);
+
 
 console.log(array);
