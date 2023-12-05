@@ -48,7 +48,7 @@ const shape = {
 };
 
 console.log(shape.diameter());
-console.log(shape.perimeter());
+console.log("sonuc",shape.perimeter());
 
 // not: arrow function'da this keyword'u düz bir sekilde kullanilmaz. Böyle olunca NaN döner
 // not: normal function'da normal sonuc döner.

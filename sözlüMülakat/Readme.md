@@ -167,13 +167,15 @@ with let and const are hoisted but remain uninitialized.
 Hoisting, JavaScript'in davranışıdır; burada değişken ve fonksiyon bildirimleri, derleme sırasında kapsayıcı scope'un en üstüne taşınır veya "kaldırılır" ("hoisted"). Var ile bildirilen değişkenler hoisted (kaldırılır) ve undefined ile başlatılır. Buna karşılık, let ve const ile bildirilen değişkenler hoisted (kaldırılır) ancak başlatılmazlar ve tanımlanmamış olarak kalırlar.
 ```
 
-## 11. What is the 'this' keyword?
-```
-In JavaScript, this refers to the object it belongs to. Its value can change depending on the context in which it's called.
-```
+```jsx
+function sayHi() {
+  console.log(name); 
+  console.log(age);
+  var name = 'Lydia';
+  let age = 21;
+}
 
-```
-JavaScript'te "this", ait olduğu nesneye referans verir. Bu değer, çağrıldığı bağlamına bağlı olarak değişebilir.
+sayHi(); // name(undefined) age(ReferenceError)
 ```
 
 ```jsx
@@ -186,6 +188,15 @@ var message;
 console.log(message);
 message = 'The variable Has been hoisted';
 
+```
+
+## 11. What is the 'this' keyword?
+```
+In JavaScript, this refers to the object it belongs to. Its value can change depending on the context in which it's called.
+```
+
+```
+JavaScript'te "this", ait olduğu nesneye referans verir. Bu değer, çağrıldığı bağlamına bağlı olarak değişebilir.
 ```
 
 ## 12. How does the this keyword work in arrow functions?
@@ -259,7 +270,7 @@ the option second argument indicates the number of elements to be deleted. Each 
 
 Note: Splice method modifies the original array and returns the deleted array.
 
-Not: splice metodu, orijinal diziyi değiştirir ve silinen diziyi döndürür.
+Not: splice metodu, orijinal diziyi değiştirir(mutate) ve silinen diziyi döndürür.
 ```
 
 ```jsx
