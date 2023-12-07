@@ -70,3 +70,26 @@ for (let i = 3; i <= 20 && count2 < 5; i++) {
         count2++
     }
 }
+
+//* 5. Fizz Buzz Write a program which iterates the integers from 1 to 100. But for multiples of three print "Fizz" instead of the number and for the multiples of five print "Buzz". For numbers which are multiples of both three and five print "FizzBuzz".
+for(let i=1; i<=100; i++){
+    if(i%3==0 && i%5==0){
+        console.log("FizzBuzz");
+    }else if(i%3==0){
+        console.log("Fizz");
+    }else if(i%5===0){
+        console.log("Buzz");
+    }else{
+        console.log(i);
+    }
+}
+
+//* 4. Multiplication Tables. Write a program that will iterate from 0 to 10. For each iteration of the for loop, it will multiply the number by 9 and log the result (e.g. "2 * 9 = 18"). Bonus: Use a nested for loop to show the tables for every multiplier from 1 to 10 (100 results total).
+
+for (let i=1; i<=10; i++){
+    for(let j=1; j<=10; j++){
+        console.log(i+ '*' + j +'='+ i*j);
+    }
+}
+
+// 1 den 50 ye kadar olan asal sayilari ekrana yazdir. // 1,2,3,5,7,11,13,17,19......47
