@@ -41,7 +41,6 @@ do {
     sayi++;  // Sayıyı bir arttır
 } while (sayac < 3);  // Toplam 3 sayı yazdırılana kadar devam et
 
-
 // 4 ve 5 ile bölünebilen ilk 2 sayiyi ekrana yazdirin
 let sayi1 =1;
 let count1= 0;
