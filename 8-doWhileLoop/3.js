@@ -41,8 +41,8 @@ const c = { key: 'c' };
   
   console.log(typeof sayHi()); // string
 
-  function sayHi() {
+  function sayHi1() {
     return (() => "ali"); 
   }
   
-  console.log(typeof sayHi()); //function
+  console.log(typeof sayHi1()); //function
