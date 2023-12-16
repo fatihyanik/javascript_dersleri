@@ -38,38 +38,38 @@
 //  function sayHi() {
 //     return (() => "ali")(); 
 //   }
-  
-  // console.log(typeof sayHi()); // string
 
-  // function sayHi1() {
-  //   return (() => "ali"); 
-  // }
-  
-  // console.log(typeof sayHi1()); //function
+// console.log(typeof sayHi()); // string
 
-  // (() => {
-  //   let x, y;
-  //   try {
-  //     throw new Error();
-  //   } catch (x) {
-  //     (x = 1), (y = 2);
-  //     console.log(x);
-  //     console.log(y);
-  //   }
-  //   console.log(x);
-  //   console.log(y);
-  // })();
+// function sayHi1() {
+//   return (() => "ali"); 
+// }
 
-  // [[0, 1], [2, 3], [3,4]].reduce(
-  //   (acc, cur) => {
-  //     return acc.concat(cur);
-  //   },
-  //   [1, 2],
-  // );
+// console.log(typeof sayHi1()); //function
+
+// (() => {
+//   let x, y;
+//   try {
+//     throw new Error();
+//   } catch (x) {
+//     (x = 1), (y = 2);
+//     console.log(x);
+//     console.log(y);
+//   }
+//   console.log(x);
+//   console.log(y);
+// })();
+
+// [[0, 1], [2, 3], [3,4]].reduce(
+//   (acc, cur) => {
+//     return acc.concat(cur);
+//   },
+//   [1, 2],
+// );
 
 
-  ' ' == ''
-  console.log(!' ');
+' ' == ''
+console.log(!' ');
 !!null; // false
 !!''; // false
 !!1; // true
