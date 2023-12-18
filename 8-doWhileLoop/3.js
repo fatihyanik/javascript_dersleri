@@ -77,3 +77,48 @@ console.log(!' ');
 // falsy dönenler = false, 0, null, NaN, '', undefined 
 
 console.log([..."bahadir"]);
+
+const arr = ['Lydia', "Fatih"]
+const arr1 = ["Saliha", "Bahadir"]
+
+const arr2 = [...arr, ...arr1];
+console.log(arr2);
+
+function* generator(i) {
+    yield i;
+    yield i * 2;
+}
+
+const gen = generator(10);
+
+console.log(gen.next().value);
+console.log(gen.next().value);
+
+const firstPromise = new Promise((res, rej) => {
+    setTimeout(res, 500, 'one');
+});
+
+const secondPromise = new Promise((res, rej) => {
+    setTimeout(res, 100, 'two');
+});
+
+Promise.race([firstPromise, secondPromise]).then(res => console.log(res));
+
+// let person = 'Lydia';
+// person = null;
+// const members = person; 
+
+
+// console.log(members);
+
+
+const person = {
+    name: 'Lydia',
+    age: 21,
+};
+
+for (const bahadir in person) {
+    console.log(bahadir);
+}
+
+console.log(3 + 2 + "3" + 4 + 3);
