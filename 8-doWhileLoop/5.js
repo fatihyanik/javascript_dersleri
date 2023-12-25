@@ -53,3 +53,14 @@ getName();
 
 console.log(`\`` === "`")
 console.log(`${1}` === "${1}")
+
+
+
+console.log(..."lydia"); //l y d i a
+console.log(...["lydia"]);//lydia
+console.log([..."lydia"]); //[ 'l', 'y', 'd', 'i', 'a' ]
+
+const numbers=[3,1,23,49,7,9];
+console.log(numbers);
+console.log(Math.max(numbers));//NaN
+console.log(Math.max(...numbers)); //49
