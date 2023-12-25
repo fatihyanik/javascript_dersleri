@@ -48,6 +48,8 @@ console.log(worldCities);
 worldCities.splice(1,0,"Washington")
 console.log(worldCities);
 
+console.log(worldCities.join(', '));
+console.log(worldCities);
 const worldCitiesString = worldCities.join(', ')
 console.log(worldCitiesString); //Manila, Washington, Hanoi, Toronto, Beijing, Ulaanbaatar, Tokyo, Budapest, Prague, Berlin
 
