@@ -13,15 +13,23 @@ let johnsBMI = Number((johnsMass / (johnsHeight ** 2)).toFixed(1));
 console.log(johnsBMI);
 
 //3
-let markHasHigherBMI = marksBMI >johnsBMI;
+let markHasHigherBMI = marksBMI > johnsBMI;
 console.log(markHasHigherBMI);
 
 //4
 console.log(`Is Mark's BMI higher than John's? Why yes, it's ${markHasHigherBMI}, it is`);
 
 //5
-if(markHasHigherBMI){
+if (markHasHigherBMI) {
     console.log(`Mark has a higher BMI: ${marksBMI} kg/m2`);
-}else{
+} else {
     console.log(`John has a higher BMI: ${johnsBMI} kg/m2`);
 }
+
+function bmiHesapla(mass, height) {
+
+
+    const bmi = mass / (height * height);
+    return Number(bmi.toFixed(1));
+}
+bmiHesapla(92, 1.72)
