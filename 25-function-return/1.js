@@ -124,3 +124,23 @@ function calcLifetimeSupply(age, amount){
 
 console.log(calcLifetimeSupply(40, 3));
 console.log(calcLifetimeSupply(25, 2));
+
+const add = x => y => z => {
+    console.log(x);
+    console.log(y);
+    console.log(z);
+    console.log(x, y, z);
+    return x + y + z;
+  };
+  
+ console.log( add(4)(5)(6));
+
+ const myFunc = ({ x:a, y, z }) => {
+    console.log({a, y, z});
+  };
+  
+  myFunc({x:1, y:2, z:3});
+
+const spookyItems = ['👻', '🎃', '🕸'];
+({ a: spookyItems[5] } = { a: '💀' });
+console.log(spookyItems);
