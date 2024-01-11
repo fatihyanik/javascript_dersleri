@@ -144,3 +144,47 @@ const add = x => y => z => {
 const spookyItems = ['👻', '🎃', '🕸'];
 ({ a: spookyItems[5] } = { a: '💀' });
 console.log(spookyItems);
+
+
+const name = 'Lydia Hallie';
+const age = 21;
+
+//console.log(isNaN(name)); //truep0o0
+//console.log(Number.isNaN(name));//false
+console.log(isNaN(age));//false
+console.log(Number.isNaN(age));//false
+
+//var randomValue = 21;
+console.log(typeof randomValue);
+function getInfo() {
+    //console.log(typeof randomValue);
+    var randomValue = 'Lydia Hallie';
+}
+
+getInfo();
+
+const emojis = ['🥑', ['✨', '✨', ['🍕', '🍕']]];
+
+console.log(emojis.flat(Infinity));
+
+class Counter {
+    constructor() {
+      this.count = 0;
+    }
+  
+    increment() {
+    this.count++;
+    }
+  }
+  
+  const counterOne = new Counter();
+  console.log(counterOne);//Counter { count: 0 }
+  console.log(counterOne.increment());
+  console.log(counterOne.count); //1
+  console.log(counterOne.increment());
+  console.log(counterOne.count); //2
+  
+  const counterTwo = counterOne; //2
+  console.log(counterTwo); //Counter { count: 2 }
+  counterTwo.increment(); 
+  console.log(counterOne.count); // 3
