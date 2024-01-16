@@ -295,3 +295,6 @@ let arrayIntegers3 = arrayIntegersOriginal3.splice(3, 1, "a", "b", "c"); //retur
 | Orijinal diziyi değiştirmez (değişmez)       | Orijinal diziyi değiştirir (değişken).           |
 | Orijinal dizinin alt kümesini döndürür       | Silinen öğeleri bir dizi olarak döndürür.        |
 | Silinen öğeleri bir dizi olarak döndürür.    | Diziye öğe eklemek veya çıkarmak için kullanılır |
+
+-[155 Javascript Questiions](https://github.com/lydiahallie/javascript-questions)
+
