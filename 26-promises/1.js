@@ -1,3 +1,76 @@
+// function Burhan(x){
+//     console.log(x);
+// } // bellekte yer alir
+
+const Burhan = (x) => {
+    console.log(x);
+} // bellekte cok yer kaplamaz
+
+// function Fatih(y, callback){
+//     callback(y);
+// }
+
+const Fatih = (y, callback) => {
+    callback(y)
+}
+
+
+
+// function Saliha(z){
+//     console.log(z);
+// }
+
+const Saliha = (z) => {
+    console.log(z);
+}
+
+Fatih(10, Burhan);
+
+const arr = [1, 2, 3, 4, 5, 6, 7];
+arr.map((x) => {
+    bes(x)
+})
+
+function bes(x) {
+    if (x > 5) {
+        console.log(x);
+    }
+}
+
+//Callback
+// const doSomething = callback => {
+//     setTimeout(() => {
+//         const skills = ['HTML', 'CSS', 'JS']
+//         callback('It did not go well', skills)
+//     }, 2000)
+// }
+
+// const callback = (err, result) => {
+//     if (err) {
+//         return console.log(err)
+//     }
+//     return console.log(result)
+// }
+
+// doSomething(callback)
+
+
+function doSomething(callback) {
+    setTimeout(() => {
+        const skills = ['HTML', 'CSS', 'JS']
+        callback('It did not go well', skills)
+    }, 2000)
+}
+
+function callback(err, result) {
+    if (err) {
+        return console.log(err)
+    }
+    return console.log(result)
+}
+
+doSomething(callback)
+
 //Callback
 // const doSomething = callback => {
 //     setTimeout(() => {
@@ -80,3 +153,5 @@ doPromise
         console.log(data)
       })
       .catch(error => console.error(error)) // yanlış bir şey olursa işleme hatası
+
+
