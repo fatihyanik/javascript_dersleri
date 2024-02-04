@@ -1,7 +1,7 @@
 // 1
 const numbers = [1, 2, 3, 4, 5];
 // The below line should console.log: [5, 6, 7, 8, 10]
-console.log(numbersAddFive); 
+console.log(numbersAddFive);
 
 // 2 
 const sayilar = [10, 11, 12, 13, 14];

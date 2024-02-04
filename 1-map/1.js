@@ -31,14 +31,14 @@ console.log(sonuc);
 console.log("numbers", numbers);
 
 const arr6 = [3, 5, 7];
-arr6.forEach((num)=>{
+arr6.forEach((num) => {
     console.log(num);
 })
 
 const arr7 = [3, 5, 7];
-let total=1;
-arr6.forEach((num)=>{
-    total=total*num
+let total = 1;
+arr6.forEach((num) => {
+    total = total * num
     console.log(total); // 3 15 105
 })
 console.log(total) // 105

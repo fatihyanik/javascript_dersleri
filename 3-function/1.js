@@ -3,19 +3,19 @@
 // function declarations are hoisted (moved to the top of their scope), so you can access the function before it is declared
 // Function declaration fonksiyon tipinde var degiskeni gibi globalde yer aliyor gibi oluyor. Ve bu fonsiyonu nerede cagirirsaniz calisiyor. Fakat bellek acisindan olumsuz bir durum olusturuyor.
 // Not: Sie können die Funktion deklaration vor der Funktionsschreibzeile aufrufen, aber Sie können den Funktion expressinon nicht aufrufen.
-console.log(toplama(6,2));
-function toplama(x,y){
+console.log(toplama(6, 2));
+function toplama(x, y) {
     //console.log(x,y);
-    return x+y;
+    return x + y;
 }
-console.log(toplama(4,5));
+console.log(toplama(4, 5));
 
-cikarma(8,4)
-function cikarma(x,y){
-    console.log(x-y);
+cikarma(8, 4)
+function cikarma(x, y) {
+    console.log(x - y);
     //console.log(x,y);
 }
-cikarma(5,3)
+cikarma(5, 3)
 
 
 // function expression
@@ -26,16 +26,16 @@ cikarma(5,3)
 // 2- Fonksiyon degerlerinin degiskenlerde saklanmasini saglar. Bu da daha sade bir kodlama demektir
 
 // console.log(carpma(4,6)); // Cannot access 'carpma' before initialization
-const carpma = function(a,b){
-    return a*b
+const carpma = function (a, b) {
+    return a * b
 }
-console.log(carpma(3,5));
+console.log(carpma(3, 5));
 
 //bolme(20,4) //Cannot access 'bolme' before initialization
-const bolme = function(a,b){
-    console.log(a/b);
+const bolme = function (a, b) {
+    console.log(a / b);
 }
-bolme(15,3)
+bolme(15, 3)
 
 // arrow function
 
