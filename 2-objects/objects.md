@@ -381,9 +381,6 @@ _hasOwnProperty_: Bir nesnede belirli bir anahtar veya özelliğin bulunup bulun
 console.log(copyPerson.hasOwnProperty('name'))
 console.log(copyPerson.hasOwnProperty('score'))
 ```
-
-🌕 Tebrikler 8. günü de başarıyla tamamladın. 9. günde görüşmek üzere
-
 ## 💻 Exercises
 
 ### Exercises: Level 1
