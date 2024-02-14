@@ -156,3 +156,49 @@ Pratik
 ### Egzersiz: Seviye 3
 
 Pratik
+
+```jsx
+fetch(countriesAPI)
+  .then(response => response.json())
+  .then(data => {
+    // Ülkeleri nüfuslarına göre sırala
+    const sortedCountries = data.sort((a, b) => b.population - a.population);
+
+//İlk 10 ülkeyi al
+const largestCountries = sortedCountries.slice(0, 10);
+
+//En büyük 10 ülkenin isimlerini al
+const largestCountriesNames = largestCountries.map(country => country.name);
+
+    // Sonuçları konsola yazdır
+    console.log("En büyük 10 ülkenin isimleri:", largestCountriesNames);
+  })
+  .catch(error => console.error('bir hata oluştu:', error));
+
+const countriesAPI = 'https://restcountries.com/v2/all';
+
+async function getLargestCountries() {
+    try {
+        // API'yi çağır ve veriyi al
+        const response = await fetch(countriesAPI);
+        const data = await response.json();
+
+        // Ülkeleri nüfuslarına göre sırala
+        const sortedCountries = data.sort((a, b) => b.population - a.population);
+
+        // İlk 10 ülkeyi al
+        const largestCountries = sortedCountries.slice(0, 10);
+
+        // En büyük 10 ülkenin isimlerini al
+        const largestCountriesNames = largestCountries.map(country => country.name);
+
+        // Sonuçları konsola yazdır
+        console.log("En büyük 10 ülkenin isimleri:", largestCountriesNames);
+    } catch (error) {
+        console.error('bir hata oluştu:', error);
+    }
+}
+
+//Fonksiyonu çağır
+getLargestCountries();
+```
